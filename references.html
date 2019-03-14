@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Wine Desire</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 900 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="main">
+    	<div id="container-presentation">
+        	<div id="header">
+            	<div id="logo">
+                	<a href="index.html"><img src="images/mini_logo_wine_desire.png" alt="" /></a>
+            	</div>
+            	<h1>Références</h1>
+        	</div>
+        </div>
+        <div class="subtitle">
+        	<h2>Restaurant "Les As Os"</h2>
+        </div>
+        <div class="ref">
+        	<div id="img-lesasos">	
+        	</div>
+        	<div class="text-ref">
+           		<!--p><a href="http://www.pagesjaunes.fr/pros/54192250" target="_blank">Voir le site</a></p-->
+        	</div>
+        </div>
+        <div id="menu">
+        	<div id="logo-asi">
+            	<a href="http://www.adv-systems.com" target="_blank"><img src="images/logo_asi.jpg" alt=""/></a>
+            </div>
+            <div id="logo-amc">
+            	<a href="http://www.actuamediacom.fr" target="_blank"><img src="images/logo_actuamediacom.jpg" alt=""/></a>
+            </div>
+            <nav class="clearfix">
+            	<ul class="clearfix">
+                	<a href="index.html"><li>Accueil</li></a>
+                    <a href="presentation.html"><li>Présentation</li></a>
+                    <a href="offre.html"><li>Offre</li></a>
+                    <a href="references.html"><li>Références</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+                <a href="#" id="pull">Menu</a>
+            </nav>
+            
+        </div>
+	</div>
+</body>
+</html>

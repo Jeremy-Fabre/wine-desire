@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Wine Desire</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 900 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="main">
+    	<div id="container-home">
+        	<div id="img-home"><img src="images/img_content_home.png" alt=""/></div>	
+        	
+        </div>
+            <!--div id="container-bt-video">
+            	<a href="video.html"><div id="bt-video"></div></a>
+            </div>
+            <div id="txt-video"><p>voir la video</p></div-->
+        
+        <div id="menu">
+        	<div id="logo-asi">
+            	<a href=""><img src="images/logo_asi.jpg" alt=""/></a>
+            </div>
+            <div id="logo-amc">
+            	<a href=""><img src="images/logo_actuamediacom.jpg" alt=""/></a>
+            </div>
+            <nav class="clearfix">
+            	<ul class="clearfix">
+                	<a href="index.html"><li>Accueil</li></a>
+                    <a href="presentation.html"><li>Présentation</li></a>
+                    <a href="offre.html"><li>Offre</li></a>
+                    <a href="references.html"><li>Références</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+                <a href="#" id="pull">Menu</a>
+            </nav>
+            
+        </div>
+	</div>
+</body>
+</html>

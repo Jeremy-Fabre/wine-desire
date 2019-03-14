@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Wine Desire</title>
+
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="Bootstrap_fichiers/bootstrap.css" rel="stylesheet">
+<link href="Bootstrap_fichiers/carousel.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 900 && menu.is(':hidden')) {
+        			menu.removeAttr('style')
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="main">
+    	<div id="container-presentation">
+        	<div id="header">
+            	<div id="logo">
+                	<a href="index.html"><img src="images/mini_logo_wine_desire.png" alt="" /></a>
+            	</div>
+            	<h1 class="title">Présentation</h1>
+        	</div>
+        </div>
+        <span class="bg_white">
+        </span>
+        <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/img_circle1.png" data-src="holder.js/140x140" alt="">
+          <h2>Une carte sur mesure</h2>
+          <p><!--Alliant authenticité et nouvelles technologies, cette application sur support iPad apporte un impact direct et puissant à votre chiffre d'affaire.--></p>
+          <p><a class="btn btn-default" href="offre.html">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/img_circle2.png" data-src="holder.js/140x140" alt="">
+          <h2>Une augmentation directe<br>de votre chiffre d'affaire</h2>
+          <p><!--Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.--></p>
+          <p><a class="btn btn-default" href="#row1">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/img_circle3.png" data-src="holder.js/140x140" alt="">
+          <h2>Un fort impact sur votre notoriété</h2>
+          <p><!--Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.--></p>
+          <p><a class="btn btn-default" href="#row3">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="row1">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Wine Desire. <span class="text-muted">Un sommelier virtuel utile à votre chiffre d'affaire.</span></h2>
+          <p class="lead">L'application permet une amélioration de la qualité générale des vins sélectionnés par les utilisateurs. L'aspect ludique et interactif de l'application conduit vos clients à commander plus fréquemment du vin en accompagnement de leur repas.
+</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/img_featurette2.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="row2">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/img_featurette1.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Innovation. <span class="text-muted">Offrez à votre clientèle une expérience nouvelle et valorisante.</span></h2>
+          <p class="lead">En présentant votre carte des vins sur Ipad avec l'application WINE DESIRE vous apportez un service intelligent qui permet de choisir en toute confiance l'assortiment mêts/vins le plus approprié.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="row3">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Notoriété et communication. <span class="text-muted"></span></h2>
+          <p class="lead">Bénéficiez de la communication WINE DESIRE presse, médias et réseaux sociaux. Un produit exclusif, réservé aux restaurants les plus exigeants qui mérite un bouche à oreille de qualité.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/img_featurette3.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      
+      <h1><a href="contact.html" class="btn btn-danger btn-lg btn-contact">Contactez-nous</a></h1>
+      
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+        <div id="space">
+        </div>
+        <div id="menu">
+        	<div id="logo-asi">
+            	<a href="http://www.adv-systems.com" target="_blank"><img src="images/logo_asi.jpg" alt=""/></a>
+            </div>
+            <div id="logo-amc">
+            	<a href="http://www.actuamediacom.fr" target="_blank"><img src="images/logo_actuamediacom.jpg" alt=""/></a>
+            </div>
+            <nav class="clearfix">
+            	<ul class="clearfix">
+                	<a href="index.html"><li>Accueil</li></a>
+                    <a href="presentation.html"><li>Présentation</li></a>
+                    <a href="offre.html"><li>Offre</li></a>
+                    <a href="references.html"><li>Références</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+                <a href="#" id="pull">Menu</a>
+            </nav>
+        </div>
+	</div>
+</body>
+</html>

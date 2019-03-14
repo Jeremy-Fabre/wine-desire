@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Wine Desire</title>
+<link href="Bootstrap_fichiers/bootstrap.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 900 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="main">
+    	<div id="container-presentation">
+        	<div id="header">
+            	<div id="logo">
+                	<a href="index.html"><img src="images/mini_logo_wine_desire.png" alt="" /></a>
+            	</div>
+            	<h1>Offre</h1>
+        	</div>
+        </div>
+        <div class="subtitle">
+        	<h2>Nos offres d'abonnement mensuel comprennent :</h2>
+        </div>
+        <div class="offre">
+        	<div class="line-offre">
+            	<span class="icon-log-in"></span><p> Le transfert de votre carte des vins sur iPad</p><hr>
+            </div>
+
+			<div class="line-offre">
+				<span class="icon-user"></span><p> Une personnalisation graphique totale de votre application</p><hr>
+            </div>
+
+			<div class="line-offre">
+            	<span class="icon-cutlery"></span><p> Vos assortiments mets/vins</p><hr>
+            </div>
+
+			<div class="line-offre">
+				<span class="icon-refresh"></span><p> Un numéro dédié au service après vente ainsi qu'aux mises à jours: (ajouter/supprimer un vin, modifier le vin du mois, les assortiments…)</p><hr>
+            </div>
+
+			<div class="line-offre">
+				<span class="icon-tablet"></span><p> Tablette ou iPad inclus en fonction des abonnements</p><hr>
+            </div>
+
+			<div class="line-offre">
+				<span class="icon-clock"></span><p> La prise en charge de vos demandes sous 72H ouvrées</p><hr>
+            </div>
+            
+            <div class="line-offre">
+				<span class="icon-research"></span><p> Recherche des descriptions des vins</p>
+            </div>
+        </div>
+        <div id="space"></div>
+        <div id="menu">
+        	<div id="logo-asi">
+            	<a href="http://www.adv-systems.com" target="_blank"><img src="images/logo_asi.jpg" alt=""/></a>
+            </div>
+            <div id="logo-amc">
+            	<a href="http://www.actuamediacom.fr" target="_blank"><img src="images/logo_actuamediacom.jpg" alt=""/></a>
+            </div>
+            <nav class="clearfix">
+            	<ul class="clearfix">
+                	<a href="index.html"><li>Accueil</li></a>
+                    <a href="presentation.html"><li>Présentation</li></a>
+                    <a href="offre.html"><li>Offre</li></a>
+                    <a href="references.html"><li>Références</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+                <a href="#" id="pull">Menu</a>
+            </nav>
+            
+        </div>
+	</div>
+</body>
+</html>
